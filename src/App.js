@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
+  const [bgColor, setBgColor] = React.useState('#ffffff');
+
+  const generateRandomColor = () => {
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    setBgColor(randomColor);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div 
+      className="app" 
+      style={{ 
+        backgroundColor: bgColor,
+        width: '100vw',
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+    >
+      <button 
+        onClick={generateRandomColor}
+        style={{
+          padding: '20px 40px',
+          fontSize: '20px',
+          cursor: 'pointer',
+          backgroundColor: 'white',
+          border: '2px solid black',
+          borderRadius: '10px'
+        }}
+      >
+        Сменить цвет
+      </button>
     </div>
   );
 }
