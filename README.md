@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+Отчёт по созданию React-приложения "Генератор случайных цветов"
+Краткое описание приложения
+Создано простое React-приложение, которое генерирует случайный цвет фона при каждом клике на кнопку. Приложение демонстрирует работу с состоянием компонентов и обработкой событий в React.
+
+Основные возможности
+Генерация случайного hex-цвета при каждом клике
+
+Динамическое изменение фона всей страницы
+
+Простой и интуитивно понятный интерфейс с одной кнопкой
+
+Адаптивный дизайн (занимает всю область просмотра)
+
+Особенности реализации
+Фреймворк: React 18+ с функциональными компонентами
+
+Хук состояния: useState для управления цветом фона
+
+Стилизация: inline-стили и CSS-файл
+
+Алгоритм генерации цвета: преобразование случайного числа в hex-формат
+
+Обработка событий: onClick для кнопки
+>>>>>>> e68ba0ece3de59294fbbacc7d03580e18583ae50
